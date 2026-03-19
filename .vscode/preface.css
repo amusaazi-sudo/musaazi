@@ -1,0 +1,7 @@
+.container-fluid{
+ display: flex;
+ /* padding: 10px; */
+ margin: 10px;
+ background-color: #e3e370;
+ /* column-gap: 10px; */
+}
