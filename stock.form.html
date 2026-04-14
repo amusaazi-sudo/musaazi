@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>STOCK</title>
+    <link rel="stylesheet" href=".vscode/stock.css">
+
 </head>
+
 <body>
-    
-</body>
-</html>
+    <div class="container">
+        <form class="action">
+            <section>
+                <h1>🔧 STOCK REGISTRATION FORM </h1>
+                <!-- <p>Add new product to inventory</p> -->
+                <div class="row my-3">
+                    <div class="col">
+                        <div class="input-container">
+                            <label for="Name"> ProductName</label>
+                            <input type="text" placeholder="enter product stocked" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="productID"> ProducID</label>
+                            <input type="number" placeholder="enter productcode">
+                        </div>
+                        <div class="input-container">
+                            <label for="category">Category</label>
+                            <select>
+                                <option selected disabled>select category</option>
+                                <option value="1">Tools</option>
+                                <option value="2">Plumbing</option>
+                                <option value="3">Electrical</option>
+                                <option value="4">Building Materials</option>
+                            </select>
+                        </div>
+
+                        <div class="input-pair">
+                            <div>
+                                <label for="quantity received">Quantity</label>
+                                <input type="number" placeholder="0" required>
+                            </div>
+
+                            <div>
+                                <label for="date"> Date added</label>
+                                <input type="date" required>
+                            </div>
+                        </div>
+
+                        <div class="input-pair">
+                            <div>
+                                <label for="buyingprice">Buying price</label>
+                                <input type="number" placeholder="0.00" required>
+                            </div>
+                            <div>
+                                <label for="sellingprice">Selling price</label>
+                                <input type="number" placeholder="0.00" required>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="Name"> SupplierName</label>
+                            <input type="text" placeholder="enter supply SupplierName">
+                        </div>
+
+                        <button type="submit">SAVE STOCK</button>
+                    </div>
+                </div>
+            </section>
+    </div>
+    </form>
+</body

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body {
+            background-color:  #62a388;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            padding: 30px;
+            box-shadow: 0 4px 8px gray;
+            width: 320px;
+            text-align: center;
+            background:  #b9d2d2;
+            border-radius: 10px;
+        }
+
+        .login-container h1 {
+            margin-bottom: 20px;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-container input {
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid  #62a388;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+            background-color:  #b9d2d2;
+            color: white;
+        }
+
+        .login-container button:hover {
+            background-color: #00b315;
+        }
+
+        .role-buttons {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .role-buttons a {
+            flex: 1;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+            background-color:  #b9d2d2;
+            color: white;
+        }
+
+        .role-buttons a.stock {
+            background-color:  #b9d2d2;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>LOGIN</h1>
+
+        <form>
+            <input type="text" placeholder="Enter your username" required>
+            <input type="email" placeholder="Email address" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">LOGIN</button>
+        </form>
+
+        <div class="role-buttons">
+            <a href="sales-dashboard.html">SALES MANAGER</a>
+            <a href="stock-dashboard.html" class="stock">STOCK MANAGER</a>
+        </div>
+    </div>
+</body>
+
+</html>

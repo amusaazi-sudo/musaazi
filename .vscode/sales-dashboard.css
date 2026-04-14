@@ -1,0 +1,19 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.dashboard{
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}

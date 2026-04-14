@@ -1,0 +1,82 @@
+body{
+    background-color: #62a388;
+}
+.container{
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: inset;
+    background-color: #b9d2d2;
+    padding: 15px;
+}
+.action{
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 15px;
+    /* box-shadow: 0 10px 25px #b9d2d2; */
+}
+
+.input-container{
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr) 3 columns; */
+    gap: 10px;
+    flex-direction: column;
+
+}
+.input-container.full {
+    grid-column: span 3;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* INPUT STYLING */
+input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #b9d2d2;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00b315;
+}
+ .input-pair{ 
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+.input-pair > div{
+    flex: 1;
+} 
+
+.input-pair label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.input-pair input{
+    width: 100%;
+    /* padding: 10px; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    box-sizing: border-box;
+} 
